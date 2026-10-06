@@ -1,0 +1,41 @@
+.hero-statsv1 {
+  width: 100%;
+  display: flex;
+  /* Eliminamos el gap y usamos bordes continuos arriba y abajo */
+  border-top: 1px solid var(--accent-purple, rgba(255, 255, 255, 0.08)); 
+  border-bottom: 1px solid var(--accent-purple, rgba(255, 255, 255, 0.08));
+}
+
+.statv1 {
+  flex: 1; /* Obliga a que todas las cajas midan exactamente lo mismo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0; /* Da el espacio vertical interno */
+  border-left: 1px solid var(--accent-purple, rgba(255, 255, 255, 0.08));
+}
+
+/* La última caja que contiene número necesita cerrar con un borde derecho */
+.statv1:nth-last-child(2) {
+  border-right: 1px solid var(--accent-purple, rgba(255, 255, 255, 0.08));
+}
+
+.stat-empty {
+  flex: 1.5; /* Hace que los bordes vacíos ocupen el espacio sobrante de los extremos */
+}
+
+.text-greenv1 {
+  color: var(--accent-green, #00ff00); /* Usamos tu variable de verde neón */
+  font-size: 28px;
+  font-family: var(--font-heading, 'Impact', sans-serif); /* Letra gruesa */
+  margin-bottom: 8px; /* Separación exacta con el texto inferior */
+}
+
+.text-statv1 {
+  color: #ffffff;
+  font-size: 11px;
+  text-transform: uppercase; /* Fuerza las mayúsculas */
+  letter-spacing: 2px; /* Crea el efecto de texto extendido */
+  margin: 0;
+}

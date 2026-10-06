@@ -1,0 +1,49 @@
+.teacher-columnsV1{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.columnV1{
+    flex: 1;
+    padding: 0 20px;
+    box-shadow: 0 0 5px var(--accent-purple, rgba(255, 255, 255, 0.08));
+    border-radius: 8px;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 100%;
+    margin: 1rem;
+    padding: 20px;
+}
+
+.banner-fluidezV1{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.containerBanner-image-fluidezV1{
+    width: 50%;
+}
+.banner-image-fluidezV1{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 8px var(--accent-purple);
+}
+.banner-content-fluidezV1{
+    width: 50%;
+}
+
+.containerEtiquetasFluidezV1{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.etiquetaFluidez{
+    flex: 1;
+    padding: 5px;
+    box-shadow: 0 0 5px var(--accent-purple, rgba(255, 255, 255, 0.08));
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
