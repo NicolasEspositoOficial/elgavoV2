@@ -5,6 +5,7 @@ import TeacherInfo from '../components/TeacherInfo';
 import TopicsGrid from '../components/TopicsGrid';
 import Modalities from '../components/Modalities';
 import CallToAction from '../components/CallToAction';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <TopicsGrid />
       <Modalities />
       <CallToAction />
+      <Footer />
     </main>
   );
 }

@@ -1,20 +1,23 @@
+import { useTranslation } from 'react-i18next';
 import personajeImg from '../assets/foto-banner-esqueleto.jpg';
 import './hero.css';
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="hero section-padding">
       <div className="hero-content">
         <h1 className="hero-title">THE NEW<br />E.R.A.</h1>
-        <h3 className="hero-subtitle text-green">ESCUCHA, REPITE Y APRENDE</h3>
+        <h3 className="hero-subtitle text-green">{t('hero.subtitle')}</h3>
         
         <p className="hero-description text-muted">
-          No se trata de memorizar frases. Se trata de entender cómo funciona el inglés, reconocerlo cuando suena rápido y usarlo para contar lo que pasó, lo que pasa y lo que quieres que pase.
+          {t('hero.description')}
         </p>
         
         <div className="hero-buttons">
-          <button className="btn-primary">CONSULTA POR WHATSAPP</button>
-          <button className="btn-secondary">CONOCE LA HISTORIA</button>
+          <button className="btn-primary">{t('hero.btnPrimary')}</button>
+          <button className="btn-secondary">{t('hero.btnSecondary')}</button>
         </div>
 
         

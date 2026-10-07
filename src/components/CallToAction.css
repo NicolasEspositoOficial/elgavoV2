@@ -1,0 +1,263 @@
+/* ===============================
+   CONTENEDOR PRINCIPAL
+=============================== */
+.cta-v2-section {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-v2-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.cta-v2-margin-top {
+    margin-top: 100px;
+}
+
+.cta-v2-text-content {
+    flex: 1;
+}
+
+/* ===============================
+   TIPOGRAFÍA Y TEXTOS
+=============================== */
+.cta-v2-subtitle-green {
+    color: #00ff00;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.cta-v2-subtitle-gray {
+    color: #888888;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.cta-v2-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 55px;
+    line-height: 1.05;
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-v2-desc {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 90%;
+}
+
+.cta-v2-welcome {
+    color: #00ff00;
+    font-family: 'Impact', 'Comic Sans MS', cursive; /* Fallback a fuente cursiva/gruesa */
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+/* ===============================
+   ETIQUETAS (TAGS)
+=============================== */
+.cta-v2-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cta-v2-tag {
+    border: 1px solid rgba(106, 13, 173, 0.5);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #dddddd;
+}
+
+/* ===============================
+   TARJETAS (CARDS)
+=============================== */
+.cta-v2-card {
+    flex: 1.1;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+/* Tarjeta Interactiva (Arriba) */
+.cta-v2-card-interactive {
+    background: linear-gradient(145deg, #0f0518, #05010a);
+    border: 1px solid rgba(106, 13, 173, 0.6);
+    box-shadow: 0 0 50px rgba(106, 13, 173, 0.15);
+}
+
+.cta-v2-icons {
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+}
+
+.cta-v2-live-text {
+    color: #00ff00;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.cta-v2-scenario {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.cta-v2-scenario-btns {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.cta-v2-btn-a, .cta-v2-btn-b {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cta-v2-btn-a:hover, .cta-v2-btn-b:hover {
+    transform: scale(1.02);
+}
+
+.cta-v2-btn-a {
+    background-color: #00ff00;
+    color: #000000;
+}
+
+.cta-v2-btn-b {
+    background-color: #d946ef; /* Morado/Rosado brillante */
+    color: #ffffff;
+}
+
+.cta-v2-card-footer {
+    color: #666666;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Tarjeta Contacto (Abajo) */
+.cta-v2-card-contact {
+    background-color: #0a0510;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cta-v2-contact-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-v2-contact-desc {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.cta-v2-contact-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.cta-v2-btn-whatsapp, .cta-v2-btn-email {
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+.cta-v2-btn-whatsapp:hover, .cta-v2-btn-email:hover {
+    opacity: 0.8;
+}
+
+.cta-v2-btn-whatsapp {
+    background-color: #00ff00;
+    color: #000000;
+    border: none;
+}
+
+.cta-v2-btn-email {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #6a0dad;
+}
+
+.cta-v2-socials {
+    display: flex;
+    gap: 15px;
+    color: #888888;
+    font-size: 12px;
+}
+
+.cta-v2-socials span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cta-v2-socials span:hover {
+    color: #00ff00;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 992px) {
+    .cta-v2-block {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .cta-v2-scenario-btns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-v2-title {
+        font-size: 40px;
+    }
+    
+    .cta-v2-contact-title {
+        font-size: 30px;
+    }
+    
+    .cta-v2-card {
+        padding: 25px;
+        width: 100%;
+    }
+}

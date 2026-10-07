@@ -1,49 +1,99 @@
-.teacher-columnsV1{
+.teacher-columnsV1 {
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 20px; /* Cambié el gap de 5px a 20px para que respiren entre sí */
 }
-.columnV1{
+
+.columnV1 {
     flex: 1;
-    padding: 0 20px;
-    box-shadow: 0 0 5px var(--accent-purple, rgba(255, 255, 255, 0.08));
+    box-shadow: 0 0 5px var(--accent-purple, rgba(106, 13, 173, 0.4));
     border-radius: 8px;
     text-align: justify;
     text-justify: inter-word;
     width: 100%;
-    margin: 1rem;
-    padding: 20px;
+    padding: 30px; /* Padding unificado */
 }
 
-.banner-fluidezV1{
+/* ===============================
+   BANNER FLUIDEZ
+=============================== */
+.banner-fluidezV1 {
     display: flex;
     width: 100%;
-    gap: 20px;
+    gap: 40px; /* Más espacio entre la imagen y el texto */
+    margin-top: 60px; /* AIRE: Separación con las columnas de arriba */
+    justify-content: space-between;
 }
-.containerBanner-image-fluidezV1{
+
+.containerBanner-image-fluidezV1 {
     width: 50%;
 }
-.banner-image-fluidezV1{
+
+.banner-image-fluidezV1 {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 0 8px var(--accent-purple);
-}
-.banner-content-fluidezV1{
-    width: 50%;
+    box-shadow: 0 0 15px rgba(106, 13, 173, 0.3);
+    display: block;
 }
 
-.containerEtiquetasFluidezV1{
-    display: flex;
-    width: 100%;
-    gap: 10px;
+.banner-content-fluidezV1 {
+    width: 50%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 30px 0; /* Padding solo arriba y abajo */
 }
-.etiquetaFluidez{
-    flex: 1;
-    padding: 5px;
-    box-shadow: 0 0 5px var(--accent-purple, rgba(255, 255, 255, 0.08));
-    color: white;
-    border-radius: 8px;
+
+.banner-content-fluidezV1 h4 {
+    color: var(--accent-green, #00ff00);
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   ETIQUETAS (TAGS)
+=============================== */
+.containerEtiquetasFluidezV1 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las etiquetas pasen a la siguiente línea si no caben */
+    width: 100%;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.etiquetaFluidez {
+    /* Eliminamos flex: 1 para que tomen el tamaño natural de su texto */
+    padding: 8px 18px; 
+    border: 1px solid rgba(106, 13, 173, 0.4); /* Borde sutil morado */
+    color: #e0e0e0;
+    border-radius: 20px; /* Bordes más redondeados tipo píldora */
     text-align: center;
+    font-size: 13px;
+    white-space: nowrap; /* Evita que el texto de la etiqueta se parta en dos líneas */
+}
+
+/* ===============================
+   RESPONSIVE (MÓVIL Y TABLET)
+=============================== */
+@media (max-width: 992px) {
+    .teacher-columnsV1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .banner-fluidezV1 {
+        flex-direction: column;
+    }
+
+    .containerBanner-image-fluidezV1, 
+    .banner-content-fluidezV1 {
+        width: 100%;
+    }
+
+    .banner-image-fluidezV1 {
+        min-height: 250px;
+    }
 }

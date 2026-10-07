@@ -1,0 +1,141 @@
+/* ===============================
+   ENCABEZADO
+=============================== */
+.modalities-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea los elementos al centro verticalmente */
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.header-titles {
+    flex: 1.2; /* Toma un poco más de espacio a la izquierda */
+}
+
+.text-green {
+    color: #4ade80; /* Verde neón */
+    margin: 0 0 5px 0;
+}
+
+.subtitle-small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.section-title {
+    font-family: 'Impact', 'Arial Black', sans-serif; /* Tipografía gruesa */
+    font-size: 55px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.header-description {
+    flex: 1;
+    font-size: 16px;
+    color: #cccccc; /* Gris claro */
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===============================
+   CUADRÍCULA Y TARJETAS
+=============================== */
+.modalities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 20px;
+}
+
+.modality-card {
+    background-color: #0d0714; /* Fondo oscuro con tono morado */
+    border: 1px solid rgba(106, 13, 173, 0.4); /* Borde morado oscuro */
+    border-radius: 12px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.modality-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(106, 13, 173, 1);
+}
+
+.modality-icon {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.card-title-impact {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.text-orange {
+    color: #f97316; /* Naranja para Curso Intensivo */
+}
+
+.text-muted {
+    color: #a3a3a3;
+    font-size: 15px;
+    line-height: 1.5;
+    flex-grow: 1; /* Empuja el botón siempre hacia abajo */
+    margin-bottom: 30px;
+}
+
+/* ===============================
+   BOTÓN (ENLACE)
+=============================== */
+.btn-outline{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #6a0dad; /* Borde morado */
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-self: flex-start; /* Evita que el botón ocupe todo el ancho de la tarjeta */
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #6a0dad;
+}
+
+/* ===============================
+   DISEÑO RESPONSIVO
+=============================== */
+@media (max-width: 992px) {
+    .modalities-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .modalities-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .section-title {
+        font-size: 40px;
+    }
+    .modalities-grid {
+        grid-template-columns: 1fr; /* 1 columna en celulares */
+    }
+}

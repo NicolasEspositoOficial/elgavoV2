@@ -1,4 +1,14 @@
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 function Navbar() {
+  const { t, i18n } = useTranslation();
+
+  // Función para cambiar de español a inglés y viceversa
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -7,18 +17,32 @@ function Navbar() {
       </div>
       
       <ul className="navbar-links">
-        <li><a href="#inicio">INICIO</a></li>
-        <li><a href="#metodologia text-green">METODOLOGÍA</a></li>
-        <li><a href="#precios">PRECIOS</a></li>
-        <li><a href="#programa">PROGRAMA</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
+        <li><a href="#inicio">{t('nav.home')}</a></li>
+        <li><a href="#metodologia" className="text-green">{t('nav.methodology')}</a></li>
+        <li><a href="#precios">{t('nav.pricing')}</a></li>
+        <li><a href="#programa">{t('nav.program')}</a></li>
+        <li><a href="#contacto">{t('nav.contact')}</a></li>
       </ul>
 
       <div className="navbar-actions">
         <span className="lang-selector">
-          <strong>ES</strong> <span className="text-muted">| EN</span>
+          <strong 
+            onClick={() => changeLanguage('es')} 
+            className={i18n.language === 'es' ? 'text-green' : 'text-muted'}
+            style={{ cursor: 'pointer' }}
+          >ES</strong> 
+          <span className="text-muted"> | </span>
+          <strong 
+            onClick={() => changeLanguage('en')} 
+            className={i18n.language === 'en' ? 'text-green' : 'text-muted'}
+            style={{ cursor: 'pointer' }}
+          >EN</strong>
         </span>
-        <button className="btn-login">LOG IN</button>
+        
+        {/* Link intercepta el clic y te lleva a la ruta /login sin recargar */}
+        <Link to="/login">
+          <button className="btn-login">{t('nav.login')}</button>
+        </Link>
       </div>
     </nav>
   );

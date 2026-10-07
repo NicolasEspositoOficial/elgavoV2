@@ -1,43 +1,72 @@
+import { useTranslation } from 'react-i18next';
+import './CallToAction.css';
+
 function CallToAction() {
+  const { t } = useTranslation();
+
   return (
-    <section className="cta-section section-padding">
+    <section className="cta-v2-section section-padding">
       
-      {/* Bloque 1: Entiende. Decide. Habla. */}
-      <div className="cta-block border-bottom">
-        <div className="cta-text">
-          <h2 className="cta-title">ENTIENDE.<br/>DECIDE.<br/>HABLA.</h2>
-          <p className="text-muted">
-            Las decisiones se toman en segundos. El idioma no debe ser 
-            una barrera, sino tu mejor herramienta de conexión.
+      {/* BLOQUE 1: HISTORIAS INTERACTIVAS */}
+      <div className="cta-v2-block">
+        <div className="cta-v2-text-content">
+          <span className="cta-v2-subtitle-green">{t('cta.interactive_subtitle')}</span>
+          <h2 className="cta-v2-title">{t('cta.interactive_title1')}<br/>{t('cta.interactive_title2')}</h2>
+          <p className="cta-v2-desc">
+            {t('cta.interactive_desc')}
           </p>
+          <div className="cta-v2-tags">
+            <span className="cta-v2-tag">{t('cta.tag1')}</span>
+            <span className="cta-v2-tag">{t('cta.tag2')}</span>
+            <span className="cta-v2-tag">{t('cta.tag3')}</span>
+            <span className="cta-v2-tag">{t('cta.tag4')}</span>
+          </div>
         </div>
         
-        <div className="cta-card purple-card">
-          <p>Llegas a un concierto en Londres. Alguien te pregunta: <em>"Can I help you?"</em></p>
-          <div className="cta-card-buttons">
-            <button className="btn-primary">Responder con seguridad</button>
-            <button className="btn-secondary">Quedarte en blanco</button>
+        <div className="cta-v2-card cta-v2-card-interactive">
+          <div className="cta-v2-icons">
+             🎸 🌙 ⚡ 🤘
           </div>
+          <span className="cta-v2-live-text">{t('cta.live_scenario')}</span>
+          <h3 className="cta-v2-scenario">
+            {t('cta.scenario_question')}
+          </h3>
+          <div className="cta-v2-scenario-btns">
+            <button className="cta-v2-btn-a">{t('cta.scenario_btn_a')}</button>
+            <button className="cta-v2-btn-b">{t('cta.scenario_btn_b')}</button>
+          </div>
+          <p className="cta-v2-card-footer">{t('cta.scenario_footer')}</p>
         </div>
       </div>
 
-      {/* Bloque 2: Cierre final */}
-      <div className="cta-block">
-        <div className="cta-text">
-          <h2 className="cta-title">"EL CONOCIMIENTO NO SIRVE DE MUCHO CUANDO UNO SE LO GUARDA."</h2>
-          <p className="text-muted">
-            Has llegado hasta aquí. Sabes que el método tradicional no funciona. 
-            Es hora de intentar algo diseñado para tu cerebro.
+      {/* BLOQUE 2: CIERRE FINAL */}
+      <div className="cta-v2-block cta-v2-margin-top">
+        <div className="cta-v2-text-content">
+          <span className="cta-v2-subtitle-gray">{t('cta.closing_subtitle')}</span>
+          <h2 className="cta-v2-title">{t('cta.closing_title')}</h2>
+          <p className="cta-v2-desc">
+            {t('cta.closing_desc')}
           </p>
-          <h3 className="text-green welcome-text">WELCOME!</h3>
+          <h3 className="cta-v2-welcome">{t('cta.closing_welcome')}</h3>
         </div>
         
-        <div className="cta-card dark-card">
-          <h3>¿LISTO PARA EMPEZAR?</h3>
-          <p className="text-muted" style={{ marginBottom: '20px' }}>
-            Únete a la nueva era del aprendizaje y domina la fluidez.
+        <div className="cta-v2-card cta-v2-card-contact">
+          <h2 className="cta-v2-contact-title">{t('cta.contact_title')}</h2>
+          <p className="cta-v2-contact-desc">
+            {t('cta.contact_desc')}
           </p>
-          <button className="btn-primary full-width">COMENZAR MI CAMINO</button>
+          
+          <div className="cta-v2-contact-btns">
+            <button className="cta-v2-btn-whatsapp">WHATSAPP · +57 324 832 4224</button>
+            <button className="cta-v2-btn-email">DEMENTEREVES@GMAIL.COM</button>
+          </div>
+
+          <div className="cta-v2-socials">
+            <span>YouTube</span>
+            <span>TikTok</span>
+            <span>Instagram</span>
+            <span>Facebook</span>
+          </div>
         </div>
       </div>
 

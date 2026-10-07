@@ -1,8 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const { registrarUsuario } = require('../controllers/userController');
+// Importamos la nueva función iniciarSesion
+const { registrarUsuario, iniciarSesion } = require('../controllers/userController');
 
-// Ruta final será: POST /api/users/register
+// Ruta para registro (POST /api/users/register) - Esta ya la tenías
 router.post('/register', registrarUsuario);
+
+// Ruta para inicio de sesión (POST /api/users/login)
+router.post('/login', iniciarSesion);
 
 module.exports = router;
