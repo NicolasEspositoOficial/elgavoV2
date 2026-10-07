@@ -1,0 +1,100 @@
+.interactive-experience {
+  background-color: #05000a; /* Continuación del fondo oscuro */
+  padding: 60px 5% 80px 5%;
+  color: #ffffff;
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-header {
+  margin-bottom: 50px;
+}
+
+.exp-pretitle {
+  color: #88ff00;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.exp-title {
+  font-family: var(--font-heading, 'Impact', sans-serif);
+  font-size: 48px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.exp-desc {
+  color: #b3b3b3;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.exp-card {
+  background-color: transparent;
+  border: 1px solid #2a2235;
+  border-radius: 12px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  border-color: #b512f5;
+}
+
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b512f5; /* El morado magenta de tu imagen */
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.step-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.step-desc {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsivo para tablets y celulares */
+@media (max-width: 992px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .exp-title {
+    font-size: 36px;
+  }
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}

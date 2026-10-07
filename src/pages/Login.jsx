@@ -85,13 +85,16 @@ function Login() {
             />
           </div>
 
-          <a href="#olvide" className="forgot-link">{t('login.forgot_password')}</a>
+          {/* Cambiado a componente Link apuntando a /recuperar */}
+          <Link to="/recuperar" className="forgot-link">{t('login.forgot_password')}</Link>
+          
           <button type="submit" className="btn-login-submit">{t('login.btn_submit')}</button>
         </form>
 
         <div className="login-footer">
           <p className="text-muted">
-            {t('login.no_account')} <a href="#registro" className="text-green">{t('login.register_link')}</a>
+            {/* Cambiado a componente Link apuntando a /registro */}
+            {t('login.no_account')} <Link to="/registro" className="text-green">{t('login.register_link')}</Link>
           </p>
           <Link to="/" className="back-link">{t('login.back_home')}</Link>
         </div>

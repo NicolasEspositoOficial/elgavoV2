@@ -20,13 +20,16 @@ app.get('/api/test', (req, res) => {
     res.json({ message: 'API de elgavo funcionando al 100%' });
 });
 
-// Aquí irán tus rutas futuras:
+// ¡AQUÍ ESTABA EL ERROR! Restauramos la ruta de usuarios:
 app.use('/api/users', require('./routes/userRoutes'));
-// app.use('/api/payments', require('./routes/paymentRoutes'));
+
+// Y aquí mantenemos la de planes:
+app.use('/api/planes', require('./routes/planRoutes'));
 
 // ---------------------------------------------------
 // CONFIGURACIÓN PARA HOSTINGER (Producción)
 // ---------------------------------------------------
+/* <-- BLOQUE COMENTADO MIENTRAS TRABAJAMOS EN LOCAL
 // Vite genera la carpeta 'dist' un nivel arriba del servidor.
 const clientDistPath = path.join(__dirname, '../dist');
 app.use(express.static(clientDistPath));
@@ -34,6 +37,7 @@ app.use(express.static(clientDistPath));
 app.use((req, res) => {
     res.sendFile(path.join(clientDistPath, 'index.html'));
 });
+*/ // <-- FIN DEL COMENTARIO
 
 // Iniciar servidor
 app.listen(PORT, () => {

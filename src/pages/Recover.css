@@ -1,0 +1,111 @@
+.recover-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color, #030303);
+  position: relative;
+  padding: 20px;
+}
+
+.recover-lang-selector {
+  position: absolute;
+  top: 30px;
+  right: 5%;
+}
+
+.recover-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--bg-card, #0a0a0a);
+  border: 1px solid var(--border-color, #1f1f1f);
+  border-radius: 12px;
+  padding: 50px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.recover-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.recover-logo {
+  font-family: var(--font-heading, 'Impact', sans-serif);
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.recover-title {
+  font-family: var(--font-heading, 'Impact', sans-serif);
+  font-size: 24px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.message-box {
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message-box.error {
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+  border: 1px solid #ff4d4d;
+}
+
+.message-box.success {
+  color: var(--accent-green, #00ff00);
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid var(--accent-green, #00ff00);
+}
+
+.recover-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-recover-submit {
+  background-color: var(--accent-green, #00ff00);
+  color: #000;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-recover-submit:hover {
+  background-color: #00cc00;
+}
+
+.recover-footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.back-link {
+  color: var(--text-muted, #888888);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .recover-container {
+    padding: 40px 20px;
+  }
+}

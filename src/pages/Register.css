@@ -1,0 +1,117 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color, #030303);
+  position: relative;
+  padding: 40px 20px; /* Un poco más de padding arriba por si la pantalla es baja */
+}
+
+.register-lang-selector {
+  position: absolute;
+  top: 30px;
+  right: 5%;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 500px; /* Más ancho que el login porque tiene filas de a dos */
+  background-color: var(--bg-card, #0a0a0a);
+  border: 1px solid var(--border-color, #1f1f1f);
+  border-radius: 12px;
+  padding: 40px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-logo {
+  font-family: var(--font-heading, 'Impact', sans-serif);
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.register-title {
+  font-family: var(--font-heading, 'Impact', sans-serif);
+  font-size: 24px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Cajas de mensajes para Error o Éxito */
+.message-box {
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.message-box.error {
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+  border: 1px solid #ff4d4d;
+}
+
+.message-box.success {
+  color: var(--accent-green, #00ff00);
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid var(--accent-green, #00ff00);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .input-group {
+  flex: 1; /* Para que cada mitad ocupe el 50% */
+}
+
+.btn-register-submit {
+  background-color: var(--accent-green, #00ff00);
+  color: #000;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-register-submit:hover {
+  background-color: #00cc00;
+}
+
+.register-footer {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 14px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 500px) {
+  .register-container {
+    padding: 30px 20px;
+  }
+  .form-row {
+    flex-direction: column; /* Apila Nombre y Apellido uno sobre otro en celular */
+  }
+}

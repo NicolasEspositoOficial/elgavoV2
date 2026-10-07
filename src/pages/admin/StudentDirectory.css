@@ -1,0 +1,40 @@
+/* =========================================
+   TABLA DE ESTUDIANTES Y EXPEDIENTES
+========================================= */
+.clickable-row { cursor: pointer; transition: background-color 0.2s; }
+.clickable-row:hover { background-color: rgba(136, 255, 0, 0.05); }
+
+.tag-plan {
+  background-color: #1f1a29;
+  color: #a100ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Modal más ancho para el expediente */
+.student-modal { max-width: 600px; }
+
+.student-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat-box { background-color: #111; padding: 20px; border-radius: 8px; border: 1px solid #1f1f1f; text-align: center; }
+.stat-box h4 { color: #888; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; }
+.text-green { color: #88ff00; font-size: 24px; font-weight: bold; }
+.text-purple { color: #a100ff; font-size: 24px; font-weight: bold; }
+
+.tracking-title { color: #fff; font-size: 16px; margin-bottom: 15px; border-bottom: 1px solid #1f1f1f; padding-bottom: 10px; }
+.tracking-item { background-color: #111; padding: 15px; border-radius: 8px; margin-bottom: 10px; font-size: 13px; }
+.error-text { color: #ff4d4d; margin-top: 5px; font-weight: 500; }
+.date-text { color: #666; font-size: 11px; margin-top: 5px; }
+
+/* MEDIA QUERY PARA ESTUDIANTES */
+@media (max-width: 768px) {
+  .student-stats-grid { grid-template-columns: 1fr; }
+}

@@ -10,7 +10,8 @@ const resources = {
         pricing: "PRECIOS",
         program: "PROGRAMA",
         contact: "CONTACTO",
-        login: "INICIAR SESIÓN"
+        login: "INICIAR SESIÓN",
+        interactive: "INTERACTIVO"
       },
       hero: {
         subtitle: "ESCUCHA, REPITE Y APRENDE",
@@ -131,7 +132,90 @@ const resources = {
         no_account: "¿No tienes una cuenta?",
         register_link: "Regístrate aquí",
         back_home: "← Volver al inicio"
-      }
+      },
+      register: {
+        title: "CREAR CUENTA",
+        subtitle: "ÚNETE A LA NUEVA E.R.A.",
+        name_label: "Nombre",
+        name_placeholder: "Tu nombre",
+        lastname_label: "Apellidos",
+        lastname_placeholder: "Tus apellidos",
+        email_label: "Correo Electrónico",
+        email_placeholder: "tu@correo.com",
+        password_label: "Contraseña",
+        password_placeholder: "Mínimo 6 caracteres",
+        birth_label: "Fecha de Nacimiento",
+        phone_label: "Teléfono (WhatsApp)",
+        phone_placeholder: "Ej: +57 300 000 0000",
+        btn_submit: "REGISTRARSE",
+        have_account: "¿Ya tienes una cuenta?",
+        login_link: "Inicia sesión aquí",
+        back_home: "← Volver al inicio"
+      },
+      recover: {
+        title: "RECUPERAR CONTRASEÑA",
+        subtitle: "Ingresa tu correo y te enviaremos las instrucciones para restablecerla.",
+        email_label: "Correo Electrónico",
+        email_placeholder: "tu@correo.com",
+        btn_submit: "ENVIAR ENLACE",
+        back_login: "← Volver a Iniciar Sesión"
+      },
+      selectPlan: {
+        title: "ELIGE TU CAMINO",
+        subtitle: "Selecciona el plan que mejor se adapte a tu objetivo y nivel.",
+        btn_select: "ELEGIR PLAN",
+        loading: "Cargando planes...",
+        free_badge: "GRATIS"
+      },
+      stories: {
+        pre_title: "ELIGE TU HISTORIA",
+        title: "300 MUNDOS. 20 DECISIONES. RUTAS REALES.",
+        search_placeholder: "Buscar 300 escenarios...",
+        filter_all: "Todos",
+        filter_travel: "Viajes",
+        filter_work: "Trabajo",
+        filter_real_life: "Vida real",
+        filter_university: "Universidad",
+        filter_sports: "Deportes",
+        btn_start: "INICIAR RUTA →",
+        decisions_tag: "decisiones"
+      },
+      heroInteractive: {
+        subtitle: "ELGAVO - HISTORIAS INTERACTIVAS EN INGLÉS",
+        title_1: "ENTIENDE.",
+        title_2: "DECIDE.",
+        title_3: "HABLA.",
+        desc: "Practica inglés dentro de situaciones reales. Cada elección cambia lo que sucede después: viajes, trabajo, universidad, deportes, dinero, vida social y más.",
+        btn_explore: "EXPLORAR 300 ESCENARIOS",
+        btn_how: "CÓMO FUNCIONA",
+        stat_1_num: "300",
+        stat_1_text: "Escenarios interactivos",
+        stat_2_num: "20",
+        stat_2_text: "Decisiones por ruta",
+        stat_3_num: "100%",
+        stat_3_text: "Experiencia en inglés",
+        card_live: "ESCENARIO EN VIVO : LONDRES",
+        card_question: "Llegas a un concierto. Alguien pregunta: 'Can I help you?'",
+        card_opt_a: "A) \"Let's solve it now.\"",
+        card_opt_b: "B) \"Could you explain my options?\"",
+        card_opt_c: "C) \"I can adapt. What works best?\"",
+        card_opt_d: "D) \"Before deciding, can we confirm?\"",
+        card_footer: "A / B / C / D crean rutas diferentes."
+      },
+      experience: {
+        pre_title: "LA EXPERIENCIA",
+        title: "UN BUCLE SIMPLE. COMUNICACIÓN REAL.",
+        desc_1: "Entras en una situación, entiendes el contexto, tomas una decisión, ves la consecuencia y sigues hablando.",
+        desc_2: "No hay respuestas de \"game over\" — hay caminos diferentes.",
+        step1_title: "Entiende",
+        step1_desc: "Lee o escucha lo que está sucediendo.",
+        step2_title: "Decide",
+        step2_desc: "Elige lo que dirías o harías.",
+        step3_title: "Habla",
+        step3_desc: "Practica la línea en voz alta o usa el modo de voz.",
+        step4_title: "Continúa",
+        step4_desc: "Tu decisión desbloquea la siguiente situación."
+      }    
     }
   },
   en: {
@@ -142,7 +226,8 @@ const resources = {
         pricing: "PRICING",
         program: "PROGRAM",
         contact: "CONTACT",
-        login: "LOG IN"
+        login: "LOG IN",
+        interactive: "INTERACTIVE"
       },
       hero: {
         subtitle: "LISTEN, REPEAT AND LEARN",
@@ -239,27 +324,6 @@ const resources = {
         contact_title: "READY TO START?",
         contact_desc: "Write to me and we can chat about your goals, your level, and the modality that best suits you."
       },
-      cta: {
-        interactive_subtitle: "INTERACTIVE STORIES",
-        interactive_title1: "UNDERSTAND. DECIDE.",
-        interactive_title2: "SPEAK.",
-        interactive_desc: "A demonstration of how the website can turn content into practice. The student makes decisions and the conversation changes based on their response.",
-        tag1: "Real context",
-        tag2: "A/B Decisions",
-        tag3: "Useful vocabulary",
-        tag4: "Natural communication",
-        live_scenario: "LIVE SCENARIO · LONDON",
-        scenario_question: "You arrive at a concert in London. Someone asks you: \"Can I help you?\"",
-        scenario_btn_a: "A) \"Where is the entrance?\"",
-        scenario_btn_b: "B) \"I'm looking for my friends.\"",
-        scenario_footer: "Choose an option to continue.",
-        closing_subtitle: "MY CONTRIBUTION · FROM WHAT I KNOW AND MY DESIRE TO KEEP TEACHING",
-        closing_title: "\"KNOWLEDGE ISN'T WORTH MUCH IF YOU KEEP IT TO YOURSELF.\"",
-        closing_desc: "THE NEW E.R.A. seeks to share a way of understanding English. Not to repeat without thinking, but to recognize the system, use it with intention, and take it to real conversations.",
-        closing_welcome: "WELCOME!",
-        contact_title: "READY TO START?",
-        contact_desc: "Write to me and we can chat about your goals, your level, and the modality that best suits you."
-      },
       footer: {
         desc: "The new era of learning. Understand the system, master fluency, and communicate with confidence.",
         nav_title: "NAVIGATION",
@@ -284,6 +348,89 @@ const resources = {
         no_account: "Don't have an account?",
         register_link: "Sign up here",
         back_home: "← Back to home"
+      },
+      register: {
+        title: "CREATE ACCOUNT",
+        subtitle: "JOIN THE NEW E.R.A.",
+        name_label: "Name",
+        name_placeholder: "Your name",
+        lastname_label: "Last Name",
+        lastname_placeholder: "Your last name",
+        email_label: "Email Address",
+        email_placeholder: "you@email.com",
+        password_label: "Password",
+        password_placeholder: "Minimum 6 characters",
+        birth_label: "Date of Birth",
+        phone_label: "Phone (WhatsApp)",
+        phone_placeholder: "Ex: +1 234 567 8900",
+        btn_submit: "SIGN UP",
+        have_account: "Already have an account?",
+        login_link: "Log in here",
+        back_home: "← Back to home"
+      },
+      recover: {
+        title: "RECOVER PASSWORD",
+        subtitle: "Enter your email and we will send you instructions to reset it.",
+        email_label: "Email Address",
+        email_placeholder: "you@email.com",
+        btn_submit: "SEND LINK",
+        back_login: "← Back to Login"
+      },
+      selectPlan: {
+        title: "CHOOSE YOUR PATH",
+        subtitle: "Select the plan that best suits your goals and level.",
+        btn_select: "CHOOSE PLAN",
+        loading: "Loading plans...",
+        free_badge: "FREE"
+      },
+      stories: {
+        pre_title: "CHOOSE YOUR STORY",
+        title: "300 WORLDS. 20 DECISIONS. REAL BRANCHING ROUTES.",
+        search_placeholder: "Search 300 scenarios...",
+        filter_all: "All",
+        filter_travel: "Travel",
+        filter_work: "Work",
+        filter_real_life: "Real life",
+        filter_university: "University",
+        filter_sports: "Sports",
+        btn_start: "START ROUTE →",
+        decisions_tag: "decisions"
+      },
+      heroInteractive: {
+        subtitle: "ELGAVO - INTERACTIVE ENGLISH STORIES",
+        title_1: "UNDERSTAND.",
+        title_2: "DECIDE.",
+        title_3: "SPEAK.",
+        desc: "Practice English inside real situations. Every choice changes what happens next — travel, work, university, sports, money, social life and more.",
+        btn_explore: "EXPLORE 300 SCENARIOS",
+        btn_how: "SEE HOW IT WORKS",
+        stat_1_num: "300",
+        stat_1_text: "Interactive scenarios",
+        stat_2_num: "20",
+        stat_2_text: "Decisions per route",
+        stat_3_num: "100%",
+        stat_3_text: "English experience",
+        card_live: "LIVE SCENARIO : LONDON",
+        card_question: "You arrive at a concert. Someone asks: 'Can I help you?'",
+        card_opt_a: "A) \"Let's solve it now.\"",
+        card_opt_b: "B) \"Could you explain my options?\"",
+        card_opt_c: "C) \"I can adapt. What works best?\"",
+        card_opt_d: "D) \"Before deciding, can we confirm?\"",
+        card_footer: "A / B / C / D create different routes."
+      },
+      experience: {
+        pre_title: "THE EXPERIENCE",
+        title: "ONE SIMPLE LOOP. REAL COMMUNICATION.",
+        desc_1: "You enter a situation, understand the context, make a choice, see the consequence and keep speaking.",
+        desc_2: "There are no \"game over\" answers — there are different paths.",
+        step1_title: "Understand",
+        step1_desc: "Read or listen to what is happening.",
+        step2_title: "Decide",
+        step2_desc: "Choose what you would say or do.",
+        step3_title: "Speak",
+        step3_desc: "Practice the line aloud or use voice mode.",
+        step4_title: "Continue",
+        step4_desc: "Your decision unlocks the next situation."
       }
     }
   }

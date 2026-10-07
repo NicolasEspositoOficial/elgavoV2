@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   const { t, i18n } = useTranslation();
 
-  // Función para cambiar de español a inglés y viceversa
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
@@ -17,11 +16,15 @@ function Navbar() {
       </div>
       
       <ul className="navbar-links">
-        <li><a href="#inicio">{t('nav.home')}</a></li>
-        <li><a href="#metodologia" className="text-green">{t('nav.methodology')}</a></li>
-        <li><a href="#precios">{t('nav.pricing')}</a></li>
-        <li><a href="#programa">{t('nav.program')}</a></li>
-        <li><a href="#contacto">{t('nav.contact')}</a></li>
+        <li><a href="/#inicio">{t('nav.home')}</a></li>
+        <li><a href="/#metodologia" className="text-green">{t('nav.methodology')}</a></li>
+        <li><a href="/#precios">{t('nav.pricing')}</a></li>
+        <li><a href="/#programa">{t('nav.program')}</a></li>
+        
+        {/* Nuevo enlace al catálogo de historias usando Link */}
+        <li><Link to="/historias" className="text-green">{t('nav.interactive')}</Link></li>
+        
+        <li><a href="/#contacto">{t('nav.contact')}</a></li>
       </ul>
 
       <div className="navbar-actions">
@@ -39,7 +42,6 @@ function Navbar() {
           >EN</strong>
         </span>
         
-        {/* Link intercepta el clic y te lleva a la ruta /login sin recargar */}
         <Link to="/login">
           <button className="btn-login">{t('nav.login')}</button>
         </Link>
